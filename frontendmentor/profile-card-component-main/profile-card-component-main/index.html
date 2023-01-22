@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background: #19A1AE;
+      overflow: hidden;
+    }
+    .left-oval{
+      position: absolute;
+
+      width: 800px;
+      height: 800px;
+      left: -100px;
+      top: -400px;
+
+      background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
+      mix-blend-mode: normal;
+      opacity: 0.5;
+      transform: rotate(-135deg);
+      border-radius: 50%;
+    }
+    .right-oval{
+      position: absolute;
+      width: 800px;
+      height: 800px;
+      right: -100px;
+      bottom: -400px;
+     
+      background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53FFEE 99.94%);
+      mix-blend-mode: normal;
+      opacity: 0.25;
+      transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+      border-radius: 50%;
+    }
+    .profile-card{
+      position: absolute;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      
+      width: 350px;
+      height: 400px;
+      border-radius: 15px;
+      box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.504835);
+      background: #FFFFFF;
+    }
+    .profile-header img{
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .profile-photo{
+      display: flex;
+      justify-content: center;
+    }
+    .profile-photo img{
+      border-color: #FFFFFF;
+      border-style: solid;
+      border-width: 5px;
+      border-radius: 50%;
+      position: relative;
+      bottom: 50px;
+    }
+    @media only screen and (max-width: 768px) {
+      .left-oval{
+        width: 400px;
+        height: 400px;
+        left: -100px;
+        top: -100px;
+      }
+      .right-oval{
+        width: 400px;
+        height: 400px;
+        bottom: -300px;
+        right: -250px;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="left-oval">
+
+    </div>
+    <div class="right-oval">
+
+    </div>
+    <div class="profile-card">
+      <div class="profile-header">
+        <img width="100%" src="./images/bg-pattern-card.svg" alt="card header" />
+      </div>
+      <div class="profile-photo">
+        <img src="./images/image-victor.jpg" alt="profile photo"/>
+      </div>
+    </div>
+  <!-- Victor Crest
+  26
+  London
+
+  80K
+  Followers
+
+  803K
+  Likes
+
+  1.4K
+  Photos
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
